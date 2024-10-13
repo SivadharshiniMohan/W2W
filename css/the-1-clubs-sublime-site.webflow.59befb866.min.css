@@ -3,8 +3,20 @@ html {
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
 }
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 body {
   margin: 0;
+  padding: 0;
+
+    width:100%; 
+		max-width: 100%; 
+  overflow-x: hidden;
 }
 article,
 aside,
@@ -5025,14 +5037,14 @@ blockquote {
   height: auto;
 }
 .banner {
-  background-image: url(../images/64f7703d9b2b60a6b46a96e9_Hero%20Fold.webp);
-  background-size: cover;
+  /* background-image: url(../img/newdp.png);
+  background-size: cover; */
   padding-top: 100px;
   padding-bottom: 76px;
   position: relative;
 }
 .banner.hide-bg {
-  background-image: url(../images/64f7703d9b2b60a6b46a96e9_Hero%20Fold.webp);
+  /* background-image: url(../img/newdp.png); */
   background-size: cover;
 }
 .banner.sumit {
@@ -5481,8 +5493,8 @@ blockquote {
 }
 .footer {
   background-color: #000;
-  padding-top: 10px;
-  padding-bottom: 50px;
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 .font-20 {
   color: #000;
@@ -27697,7 +27709,7 @@ blockquote {
     height: 200px;
   }
   .banner {
-    background-image: url(../images/64f7703d9b2b60a6b46a96e9_Hero%20Fold.webp);
+    background-image: url(../img/newdp.png);
     background-size: cover;
     padding-top: 0;
     padding-bottom: 0;
@@ -27821,6 +27833,15 @@ blockquote {
     font-size: 16px;
     line-height: 150%;
   }
+  .center-icon {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Centers items vertically */
+  align-items: center; /* Centers items horizontally */
+  text-align: center; /* Centers the text */
+  height: 100%; /* Make sure the div takes full height if necessary */
+}
+
   .capsule {
     padding-top: 0;
     padding-bottom: 0;
@@ -28044,10 +28065,19 @@ blockquote {
     line-height: 39.2px;
   }
   .image-11 {
-    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;
     height: 100%;
     position: relative;
   }
+  /* Hide image on screens smaller than 992px */
+@media (max-width: 992px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
   .text-9 {
     display: block;
   }
