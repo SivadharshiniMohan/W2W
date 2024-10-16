@@ -5494,7 +5494,7 @@ blockquote {
 .footer {
   background-color: #000;
   padding-top: 5px;
-  padding-bottom: 44px;
+  padding-bottom: 100px;
 }
 .font-20 {
   color: #000;
@@ -27956,7 +27956,7 @@ blockquote {
   }
   .footer {
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 100px;
   }
   .font-20 {
     margin-bottom: 10px;
@@ -38936,14 +38936,13 @@ blockquote {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 5px;
   font-size: 20px;
 }
 
 .social-icons {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .social-icons a {
