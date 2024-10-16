@@ -1383,72 +1383,57 @@
           </div>
         </div> -->
         
-        <div class="section_faq"  style="width:100%">
+        <div class="section_faq">
           <div class="padding-global-2">
             <div class="container-large-2 w-container">
-              <h2
-                data-w-id="c2b20fba-a82f-44f9-1cd1-18eab57d57fb"
-                class="gray-gradient-2 line-height-50 margin-bottom"
-              >
-                FAQs
-              </h2>
+              <h2 class="gray-gradient-2 line-height-50 margin-bottom">FAQs</h2>
               <div class="faq-wrapper">
-                <div
-                  class="sharan-blue-white-faqs-collection-list-wrapper w-dyn-list"
-                >
-                  <div
-                    role="list"
-                    class="sharan-blue-white-faqs-collection-list w-dyn-items"
-                  >
-                    <div
-                      role="listitem"
-                      class="sharan-blue-white-faqs-collection-list-item w-dyn-item"
-                    >
+                <div class="sharan-blue-white-faqs-collection-list-wrapper w-dyn-list">
+                  <div role="list" class="sharan-blue-white-faqs-collection-list w-dyn-items">
+                    <div role="listitem" class="sharan-blue-white-faqs-collection-list-item w-dyn-item">
                       <div class="blue-white-faq-wrapper">
-                        <div
-                          data-w-id="93098733-3432-09e9-feab-aa0718297c01"
-                          class="blue-white-faq-question-wrapper"
-                        >
+                        <!-- Question wrapper -->
+                        <div class="blue-white-faq-question-wrapper" onclick="toggleAnswer(this)">
                           <h3 class="question-text-6">
-                            Is Recording is Available?
+                            Is recording available?
                           </h3>
                           <img
                             src="images/64674f96d214289aa3cf2ec8_bx-plus.svg"
                             loading="lazy"
-                            style="
-                              -webkit-transform: translate3d(0, 0, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0deg) skew(0, 0);
-                              -moz-transform: translate3d(0, 0, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0deg) skew(0, 0);
-                              -ms-transform: translate3d(0, 0, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0deg) skew(0, 0);
-                              transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-                            "
                             alt=""
                             class="blue-white-faq-icon"
                           />
                         </div>
-                        <div
-                          style="height: 0px"
-                          class="blue-white-faq-answer-wrapper"
-                        >
+                        <!-- Answer wrapper -->
+                        <div class="blue-white-faq-answer-wrapper" style="display: none;">
                           <div class="blue-white-answer-paragraph">
-                           Yes, it available.
+                            Yes, it's available.
                           </div>
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
+        <!-- JavaScript -->
+        <script>
+          function toggleAnswer(element) {
+            // Find the corresponding answer wrapper
+            var answerWrapper = element.nextElementSibling;
+        
+            // Toggle the display property between 'none' and 'block'
+            if (answerWrapper.style.display === "none" || answerWrapper.style.display === "") {
+              answerWrapper.style.display = "block"; // Show the answer
+            } else {
+              answerWrapper.style.display = "none"; // Hide the answer
+            }
+          }
+        </script>
+        
        
       </main>
       <div class="w-embed">
